@@ -9,6 +9,8 @@ Tested only in gfortran 8.2 so far. Fortran 2003 or higher is required for this 
 
 The file is pretty big. In the future i'll see about breaking it up into smaller files for faster compiling.
 
+Although some of the types have functions and overloading going on, you can still pass them to C without any problems if you have to.
+
 #### Usage  `use timez`
 
 For more accurate results use clock_gettime instead of gettimeofday and time_tm with the interval functions
@@ -891,6 +893,10 @@ print *,"" will automatically convert time_tm to a string to print
 integer(kind=c_long)::tv_sec=0
 integer(kind=c_long)::tv_nsec=0
 
+function set
+this%set(c_long,c_long)  !tv_sec,tv_nsec
+this%set(c_long)  !tv_sec
+
 Has operator overloading for =,+,-,*,/,**
 Using any +,-,*,/,** for manipulating the seconds
 
@@ -903,6 +909,10 @@ print *,"" will automatically convert time_tm to a string to print
 ```
 integer(kind=c_long)::tv_sec=0
 integer(kind=c_long)::tv_usec=0
+
+function set
+this%set(c_long,c_long)  !tv_sec,tv_usec
+this%set(c_long)  !tv_sec
 
 Has operator overloading for =,+,-,*,/,**
 Using any +,-,*,/,** for manipulating the seconds
