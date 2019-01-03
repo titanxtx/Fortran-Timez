@@ -385,7 +385,7 @@ interval_milli(c_long_double,timeval)
 ```
 #### interval_micro
 ```
-milliseconds
+microseconds
 epoch time, epoch time
 returns the time difference between time2-time1 in microseconds c_long_double 
 time1,time2
@@ -451,7 +451,7 @@ interval_micro(c_long_double,timeval)
 ```
 #### interval_nano
 ```
-milliseconds
+nanoseconds
 epoch time, epoch time
 returns the time difference between time2-time1 in nanoseconds c_long_double 
 time1,time2
@@ -517,7 +517,7 @@ interval_nano(c_long_double,timeval)
 ```
 #### interval_min
 ```
-milliseconds
+minutes
 epoch time, epoch time
 returns the time difference between time2-time1 in minutes c_long_double 
 time1,time2
@@ -583,7 +583,7 @@ interval_min(c_long_double,timeval)
 ```
 #### interval_hour
 ```
-milliseconds
+hours
 epoch time, epoch time
 returns the time difference between time2-time1 in hours c_long_double 
 time1,time2
@@ -649,7 +649,7 @@ interval_hour(c_long_double,timeval)
 ```
 #### interval_day
 ```
-milliseconds
+days
 epoch time, epoch time
 returns the time difference between time2-time1 in days c_long_double 
 time1,time2
@@ -715,7 +715,7 @@ interval_day(c_long_double,timeval)
 ```
 #### interval_week
 ```
-milliseconds
+weeks
 epoch time, epoch time
 returns the time difference between time2-time1 in weeks c_long_double 
 time1,time2
@@ -781,7 +781,7 @@ interval_week(c_long_double,timeval)
 ```
 #### interval_year
 ```
-milliseconds
+years
 epoch time, epoch time
 returns the time difference between time2-time1 in years c_long_double 
 time1,time2
