@@ -5,7 +5,7 @@ The code uses the C time.h functions for timing. Extra functionality was added o
 
 Some of these functions are built into Linux so using this module in windows might not work.
 
-Tested only in gfortran 8.2 so far.
+Tested only in gfortran 8.2 so far. Fortran 2003 or higher is required for this library to work.
 
 ## Functions/Subroutines
 
