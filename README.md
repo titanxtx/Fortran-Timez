@@ -7,6 +7,8 @@ Some of these functions are built into Linux so using this module in windows mig
 
 Tested only in gfortran 8.2 so far. Fortran 2003 or higher is required for this library to work.
 
+
+
 ## Functions/Subroutines
 
 #### nanosleep
@@ -839,3 +841,78 @@ interval_year(c_float,timeval)
 interval_year(c_double,timeval)
 interval_year(c_long_double,timeval)
 ```
+#### difftime
+```
+end time, beginning time
+returns c_double of the time difference
+
+difftime(c_long,c_long)
+```
+## types
+
+#### time_tm:
+```
+integer(kind=c_int)::tm_sec
+integer(kind=c_int)::tm_min
+integer(kind=c_int)::tm_hour
+integer(kind=c_int)::tm_mday
+integer(kind=c_int)::tm_mon
+integer(kind=c_int)::tm_year
+integer(kind=c_int)::tm_wday
+integer(kind=c_int)::tm_yday
+integer(kind=c_int)::tm_isdst
+
+Has operator overloading for =,+,-,*,/,**
+Using any +,-,*,/,** for manipulating the seconds
+New operators: 
+.addsec. - adds seconds
+.subsec. - substracts seconds
+.addday. - adds days
+.subday. - subtracts days
+.addmin. - adds minutes
+.submin. - subtracts minutes
+.addhour. - adds hours
+.subhour.  - subtracts hours
+.addweek. - adds weeks
+.subweek. - subtracts weeks
+.addyear. - adds years
+.subyear. - subtracts years
+
+If assignment is to a number time_tm will convert to a epoch integer
+
+print *,"" will automatically convert time_tm to a string to print
+```     
+#### timespec:
+```
+integer(kind=c_long)::tv_sec=0
+integer(kind=c_long)::tv_nsec=0
+
+Has operator overloading for =,+,-,*,/,**
+Using any +,-,*,/,** for manipulating the seconds
+
+If assignment is to a number timespec will convert to a epoch integer
+
+print *,"" will automatically convert time_tm to a string to print
+```
+        
+#### timeval:
+```
+integer(kind=c_long)::tv_sec=0
+integer(kind=c_long)::tv_usec=0
+
+Has operator overloading for =,+,-,*,/,**
+Using any +,-,*,/,** for manipulating the seconds
+
+If assignment is to a number timeval will convert to a epoch integer
+
+print *,"" will automatically convert time_tm to a string to print
+```
+## Constants
+```
+clk_id-
+integer(kind=c_int),parameter::clock_realtime=0,clock_monotonic=1,clock_process_cputime_id=2,&
+    clock_thread_cputime_id=3,clock_monotonic_raw=4,clock_realtime_coarse=5,clock_monotonic_coarse=6,&
+    clock_boottime=7,clock_realtime_alarm=8,clock_boottime_alarm=9,clock_tai=11,timer_abstime=1
+
+```
+
