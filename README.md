@@ -868,6 +868,18 @@ integer(kind=c_int)::tm_wday
 integer(kind=c_int)::tm_yday
 integer(kind=c_int)::tm_isdst
 
+functions local, gm
+local sets time_tm to localtime()
+gm sets time_tm to gmtime()
+
+call this%local(c_int)
+call this%local(c_long)
+call this%local()
+
+call this%gm(c_int)
+call this%gm(c_long)
+call this%gm()
+
 Has operator overloading for =,+,-,*,/,**
 Using any +,-,*,/,** for manipulating the seconds
 New operators: 
@@ -894,8 +906,8 @@ integer(kind=c_long)::tv_sec=0
 integer(kind=c_long)::tv_nsec=0
 
 function set
-this%set(c_long,c_long)  !tv_sec,tv_nsec
-this%set(c_long)  !tv_sec
+call this%set(c_long,c_long)  !tv_sec,tv_nsec
+call this%set(c_long)  !tv_sec
 
 Has operator overloading for =,+,-,*,/,**
 Using any +,-,*,/,** for manipulating the seconds
@@ -911,8 +923,8 @@ integer(kind=c_long)::tv_sec=0
 integer(kind=c_long)::tv_usec=0
 
 function set
-this%set(c_long,c_long)  !tv_sec,tv_usec
-this%set(c_long)  !tv_sec
+call this%set(c_long,c_long)  !tv_sec,tv_usec
+call this%set(c_long)  !tv_sec
 
 Has operator overloading for =,+,-,*,/,**
 Using any +,-,*,/,** for manipulating the seconds
