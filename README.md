@@ -5,6 +5,8 @@ The code uses the C time.h functions for timing. Extra functionality was added o
 
 Some of these functions are built into Linux so using this module in windows might not work.
 
+Tested only in gfortran 8.2 so far.
+
 ## Functions/Subroutines
 
 #### nanosleep
@@ -27,7 +29,7 @@ call nanosleep(c_long_double) !nanoseconds
 #### usleep
 ```
 Because unsigned variables are not in Fortran it is better to use microsleep.
-This is better 
+
 Real types are floored
 call usleep(c_int,c_int)
 call usleep(c_int)
