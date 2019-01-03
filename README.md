@@ -5,7 +5,7 @@ The code uses the C time.h functions for timing. Extra functionality was added o
 
 Some of these functions are built into Linux so using this module in windows might not work.
 
-## Functions
+## Functions/Subroutines
 
 #### nanosleep
 ```
