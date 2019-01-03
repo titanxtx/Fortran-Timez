@@ -1,7 +1,7 @@
 # Fortran-Timez
 Fortran Timing library
 
-The code uses the C time.h functions for timing. Extra functionality was added on top so you don't need to mess with the C interface to use this library. When using this library use C interoperability types if you can. Most of the functions take advantage of the function overloading so you can use many types with most of the functions. 
+The code uses the C time.h functions for timing. Extra functionality was added on top so you don't need to mess with the C interface to use this library. When using this library use C interoperability types if you can. Most of the functions take advantage of function overloading so you can use many types with most of the functions. 
 
 Some of these functions are built into Linux so using this module in windows might not work.
 
