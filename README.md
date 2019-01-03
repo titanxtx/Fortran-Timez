@@ -55,6 +55,21 @@ call microsleep(c_float,c_int)
 call microsleep(c_long_double)
 call microsleep(c_long_double,c_int)
 ```
+#### millisleep
+```
+milliseconds,return val
+
+call millisleep(c_int) 
+call millisleep(c_int,c_int)
+call millisleep(c_long)
+call millisleep(c_long,c_int)
+call millisleep(c_double)
+call millisleep(c_double,c_int)
+call millisleep(c_float)
+call millisleep(c_float,c_int)
+call millisleep(c_long_double)
+call millisleep(c_long_double,c_int)
+```
 #### sleep
 ```
 seconds,return val
