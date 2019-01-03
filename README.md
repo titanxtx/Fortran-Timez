@@ -3,7 +3,7 @@ Fortran Timing library
 
 The code uses the C time.h functions for timing. Extra functionality was added on top so you don't need to mess with the C interface to use this library. When using this library use C interoperability types if you can. Most of the functions take advantage of function overloading so you can use many types with most of the functions. 
 
-Some of these functions are built into Linux so using this module in windows might not work.
+Some of these functions are built into Linux so using this module in Windows might not work.
 
 Tested only in gfortran 8.2 so far. Fortran 2003 or higher is required for this library to work.
 
@@ -910,6 +910,11 @@ Using any +,-,*,/,** for manipulating the seconds
 If assignment is to a number timeval will convert to a epoch integer
 
 print *,"" will automatically convert time_tm to a string to print
+```
+#### timezone:
+```
+integer(kind=c_int)::tz_minuteswest=0
+integer(kind=c_int)::tz_dsttime=0
 ```
 ## Constants
 ```
