@@ -7,14 +7,18 @@ Some of these functions are built into Linux so using this module in windows mig
 
 Tested only in gfortran 8.2 so far. Fortran 2003 or higher is required for this library to work.
 
+The file is pretty big. In the future i'll see about breaking it up into smaller files for faster compiling.
 
+#### Usage  `use timez`
+
+For more accurate results use clock_gettime instead of gettimeofday and time_tm with the interval functions
 
 ## Functions/Subroutines
 
 #### nanosleep
 ```
 Real types are floored
-timespec is a type
+
 call nanosleep(timespec,timespec,c_int)
 call nanosleep(timespec)
 call nanosleep(timespec,c_int)
