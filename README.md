@@ -3,9 +3,9 @@ Fortran Timing library
 
 The code uses the C time.h functions for timing. Extra functionality was added on top so you don't need to mess with the C interface to use this library. When using this library use C interoperability types if you can. Most of the functions take advantage of the function overloading so you can use many types with most of the functions. 
 
-##Functions
+## Functions
 
-####nanosleep
+#### nanosleep
 ```
 Real types are floored
 timespec is a type
@@ -22,7 +22,7 @@ call nanosleep(c_float) !nanoseconds
 call nanosleep(c_double) !nanoseconds
 call nanosleep(c_long_double) !nanoseconds
 ```
-####usleep
+#### usleep
 ```
 Because unsigned variables are not in Fortran it is better to use microsleep.
 This is better 
@@ -38,7 +38,7 @@ call usleep(c_double)
 call usleep(c_long_double,c_int)
 call usleep(c_long_double)
 ```
-####microsleep
+#### microsleep
 ```
 microseconds,return val
 
@@ -53,7 +53,7 @@ call microsleep(c_float,c_int)
 call microsleep(c_long_double)
 call microsleep(c_long_double,c_int)
 ```
-####microsleep
+#### microsleep
 ```
 milliseconds,return val
 
@@ -68,7 +68,7 @@ call millisleep(c_float,c_int)
 call millisleep(c_long_double)
 call millisleep(c_long_double,c_int)
 ```
-####sleep
+#### sleep
 ```
 seconds,return val
 
