@@ -318,6 +318,17 @@ interval(c_double,timeval)
 interval(c_float,timeval)
 interval(c_double,timeval)
 interval(c_long_double,timeval)
+
+!Automatically compares the difference between clock_gettime and the user entered data
+interval(time_tm) 
+interval(timespec)
+interval(timeval)
+interval(c_int)
+interval(c_long)
+interval(c_double)
+interval(c_float)
+interval(c_double)
+interval(c_long_double)
 ```
 #### interval_milli 
 ```
@@ -384,6 +395,17 @@ interval_milli(c_double,timeval)
 interval_milli(c_float,timeval)
 interval_milli(c_double,timeval)
 interval_milli(c_long_double,timeval)
+
+!Automatically compares the difference between clock_gettime and the user entered data
+interval_milli(time_tm) 
+interval_milli(timespec)
+interval_milli(timeval)
+interval_milli(c_int)
+interval_milli(c_long)
+interval_milli(c_double)
+interval_milli(c_float)
+interval_milli(c_double)
+interval_milli(c_long_double)
 ```
 #### interval_micro
 ```
@@ -450,6 +472,17 @@ interval_micro(c_double,timeval)
 interval_micro(c_float,timeval)
 interval_micro(c_double,timeval)
 interval_micro(c_long_double,timeval)
+
+!Automatically compares the difference between clock_gettime and the user entered data
+interval_micro(time_tm) 
+interval_micro(timespec)
+interval_micro(timeval)
+interval_micro(c_int)
+interval_micro(c_long)
+interval_micro(c_double)
+interval_micro(c_float)
+interval_micro(c_double)
+interval_micro(c_long_double)
 ```
 #### interval_nano
 ```
@@ -516,6 +549,17 @@ interval_nano(c_double,timeval)
 interval_nano(c_float,timeval)
 interval_nano(c_double,timeval)
 interval_nano(c_long_double,timeval)
+
+!Automatically compares the difference between clock_gettime and the user entered data
+interval_nano(time_tm) 
+interval_nano(timespec)
+interval_nano(timeval)
+interval_nano(c_int)
+interval_nano(c_long)
+interval_nano(c_double)
+interval_nano(c_float)
+interval_nano(c_double)
+interval_nano(c_long_double)
 ```
 #### interval_min
 ```
@@ -582,6 +626,17 @@ interval_min(c_double,timeval)
 interval_min(c_float,timeval)
 interval_min(c_double,timeval)
 interval_min(c_long_double,timeval)
+
+!Automatically compares the difference between clock_gettime and the user entered data
+interval_min(time_tm) 
+interval_min(timespec)
+interval_min(timeval)
+interval_min(c_int)
+interval_min(c_long)
+interval_min(c_double)
+interval_min(c_float)
+interval_min(c_double)
+interval_min(c_long_double)
 ```
 #### interval_hour
 ```
@@ -648,6 +703,17 @@ interval_hour(c_double,timeval)
 interval_hour(c_float,timeval)
 interval_hour(c_double,timeval)
 interval_hour(c_long_double,timeval)
+
+!Automatically compares the difference between clock_gettime and the user entered data
+interval_hour(time_tm) 
+interval_hour(timespec)
+interval_hour(timeval)
+interval_hour(c_int)
+interval_hour(c_long)
+interval_hour(c_double)
+interval_hour(c_float)
+interval_hour(c_double)
+interval_hour(c_long_double)
 ```
 #### interval_day
 ```
@@ -714,6 +780,17 @@ interval_day(c_double,timeval)
 interval_day(c_float,timeval)
 interval_day(c_double,timeval)
 interval_day(c_long_double,timeval)
+
+!Automatically compares the difference between clock_gettime and the user entered data
+interval_day(time_tm) 
+interval_day(timespec)
+interval_day(timeval)
+interval_day(c_int)
+interval_day(c_long)
+interval_day(c_double)
+interval_day(c_float)
+interval_day(c_double)
+interval_day(c_long_double)
 ```
 #### interval_week
 ```
@@ -780,6 +857,17 @@ interval_week(c_double,timeval)
 interval_week(c_float,timeval)
 interval_week(c_double,timeval)
 interval_week(c_long_double,timeval)
+
+!Automatically compares the difference between clock_gettime and the user entered data
+interval_week(time_tm) 
+interval_week(timespec)
+interval_week(timeval)
+interval_week(c_int)
+interval_week(c_long)
+interval_week(c_double)
+interval_week(c_float)
+interval_week(c_double)
+interval_week(c_long_double)
 ```
 #### interval_year
 ```
@@ -846,6 +934,17 @@ interval_year(c_double,timeval)
 interval_year(c_float,timeval)
 interval_year(c_double,timeval)
 interval_year(c_long_double,timeval)
+
+!Automatically compares the difference between clock_gettime and the user entered data
+interval_year(time_tm) 
+interval_year(timespec)
+interval_year(timeval)
+interval_year(c_int)
+interval_year(c_long)
+interval_year(c_double)
+interval_year(c_float)
+interval_year(c_double)
+interval_year(c_long_double)
 ```
 #### difftime
 ```
