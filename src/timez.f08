@@ -454,7 +454,11 @@ module timez
         tvclock_interval_time_tm_timeval2,tvclock_interval_time_tm_int1,tvclock_interval_time_tm_int2,&
         tvclock_interval_time_tm_long1,tvclock_interval_time_tm_long2,tvclock_interval_time_tm_float1,&
         tvclock_interval_time_tm_float2,tvclock_interval_time_tm_double1,tvclock_interval_time_tm_double2,&
-        tvclock_interval_time_tm_longd1,tvclock_interval_time_tm_longd2
+        tvclock_interval_time_tm_longd1,tvclock_interval_time_tm_longd2,&
+
+        tvclock_interval_one_sec_timeval,tvclock_interval_one_sec_timespec,tvclock_interval_one_sec_time_tm,&
+        tvclock_interval_one_sec_int,tvclock_interval_one_sec_long,tvclock_interval_one_sec_float,&
+        tvclock_interval_one_sec_double,tvclock_interval_one_sec_longd
         end interface interval
 
     interface interval_milli
@@ -472,7 +476,11 @@ module timez
         tvclock_interval_milli_time_tm_timeval2,tvclock_interval_milli_time_tm_int1,tvclock_interval_milli_time_tm_int2,&
         tvclock_interval_milli_time_tm_long1,tvclock_interval_milli_time_tm_long2,tvclock_interval_milli_time_tm_float1,&
         tvclock_interval_milli_time_tm_float2,tvclock_interval_milli_time_tm_double1,tvclock_interval_milli_time_tm_double2,&
-        tvclock_interval_milli_time_tm_longd1,tvclock_interval_milli_time_tm_longd2
+        tvclock_interval_milli_time_tm_longd1,tvclock_interval_milli_time_tm_longd2,&
+        
+        tvclock_interval_milli_one_timeval,tvclock_interval_milli_one_timespec,tvclock_interval_milli_one_time_tm,&
+        tvclock_interval_milli_one_int,tvclock_interval_milli_one_long,tvclock_interval_milli_one_float,&
+        tvclock_interval_milli_one_double,tvclock_interval_milli_one_longd
     end interface interval_milli
 
     interface interval_micro
@@ -490,7 +498,11 @@ module timez
         tvclock_interval_micro_time_tm_timeval2,tvclock_interval_micro_time_tm_int1,tvclock_interval_micro_time_tm_int2,&
         tvclock_interval_micro_time_tm_long1,tvclock_interval_micro_time_tm_long2,tvclock_interval_micro_time_tm_float1,&
         tvclock_interval_micro_time_tm_float2,tvclock_interval_micro_time_tm_double1,tvclock_interval_micro_time_tm_double2,&
-        tvclock_interval_micro_time_tm_longd1,tvclock_interval_micro_time_tm_longd2
+        tvclock_interval_micro_time_tm_longd1,tvclock_interval_micro_time_tm_longd2,&
+        
+        tvclock_interval_micro_one_timeval,tvclock_interval_micro_one_timespec,tvclock_interval_micro_one_time_tm,&
+        tvclock_interval_micro_one_int,tvclock_interval_micro_one_long,tvclock_interval_micro_one_float,&
+        tvclock_interval_micro_one_double,tvclock_interval_micro_one_longd
     end interface interval_micro
 
     interface interval_nano
@@ -508,7 +520,11 @@ module timez
         tvclock_interval_nano_time_tm_timeval2,tvclock_interval_nano_time_tm_int1,tvclock_interval_nano_time_tm_int2,&
         tvclock_interval_nano_time_tm_long1,tvclock_interval_nano_time_tm_long2,tvclock_interval_nano_time_tm_float1,&
         tvclock_interval_nano_time_tm_float2,tvclock_interval_nano_time_tm_double1,tvclock_interval_nano_time_tm_double2,&
-        tvclock_interval_nano_time_tm_longd1,tvclock_interval_nano_time_tm_longd2
+        tvclock_interval_nano_time_tm_longd1,tvclock_interval_nano_time_tm_longd2,&
+        
+        tvclock_interval_nano_one_timeval,tvclock_interval_nano_one_timespec,tvclock_interval_nano_one_time_tm,&
+        tvclock_interval_nano_one_int,tvclock_interval_nano_one_long,tvclock_interval_nano_one_float,&
+        tvclock_interval_nano_one_double,tvclock_interval_nano_one_longd
     end interface interval_nano
 
     interface interval_min
@@ -523,7 +539,11 @@ module timez
         tvclock_interval_min_time_tm_timeval1,tvclock_interval_min_time_tm_timeval2,tvclock_interval_min_time_tm_int1,&
         tvclock_interval_min_time_tm_int2,tvclock_interval_min_time_tm_long1,tvclock_interval_min_time_tm_long2,&
         tvclock_interval_min_time_tm_float1,tvclock_interval_min_time_tm_float2,tvclock_interval_min_time_tm_double1,&
-        tvclock_interval_min_time_tm_double2,tvclock_interval_min_time_tm_longd1,tvclock_interval_min_time_tm_longd2
+        tvclock_interval_min_time_tm_double2,tvclock_interval_min_time_tm_longd1,tvclock_interval_min_time_tm_longd2,&
+        
+        tvclock_interval_min_one_timeval,tvclock_interval_min_one_timespec,tvclock_interval_min_one_time_tm,&
+        tvclock_interval_min_one_int,tvclock_interval_min_one_long,tvclock_interval_min_one_float,&
+        tvclock_interval_min_one_double,tvclock_interval_min_one_longd
 
     end interface interval_min
     !All in seconds below---------------------------------------
@@ -539,7 +559,11 @@ module timez
         tvclock_interval_hour_time_tm_timeval1,tvclock_interval_hour_time_tm_timeval2,tvclock_interval_hour_time_tm_int1,&
         tvclock_interval_hour_time_tm_int2,tvclock_interval_hour_time_tm_long1,tvclock_interval_hour_time_tm_long2,&
         tvclock_interval_hour_time_tm_float1,tvclock_interval_hour_time_tm_float2,tvclock_interval_hour_time_tm_double1,&
-        tvclock_interval_hour_time_tm_double2,tvclock_interval_hour_time_tm_longd1,tvclock_interval_hour_time_tm_longd2
+        tvclock_interval_hour_time_tm_double2,tvclock_interval_hour_time_tm_longd1,tvclock_interval_hour_time_tm_longd2,&
+        
+        tvclock_interval_hour_one_timeval,tvclock_interval_hour_one_timespec,tvclock_interval_hour_one_time_tm,&
+        tvclock_interval_hour_one_int,tvclock_interval_hour_one_long,tvclock_interval_hour_one_float,&
+        tvclock_interval_hour_one_double,tvclock_interval_hour_one_longd
         end interface interval_hour
 
     interface interval_day
@@ -554,7 +578,11 @@ module timez
         tvclock_interval_day_time_tm_timeval1,tvclock_interval_day_time_tm_timeval2,tvclock_interval_day_time_tm_int1,&
         tvclock_interval_day_time_tm_int2,tvclock_interval_day_time_tm_long1,tvclock_interval_day_time_tm_long2,&
         tvclock_interval_day_time_tm_float1,tvclock_interval_day_time_tm_float2,tvclock_interval_day_time_tm_double1,&
-        tvclock_interval_day_time_tm_double2,tvclock_interval_day_time_tm_longd1,tvclock_interval_day_time_tm_longd2
+        tvclock_interval_day_time_tm_double2,tvclock_interval_day_time_tm_longd1,tvclock_interval_day_time_tm_longd2,&
+        
+        tvclock_interval_day_one_timeval,tvclock_interval_day_one_timespec,tvclock_interval_day_one_time_tm,&
+        tvclock_interval_day_one_int,tvclock_interval_day_one_long,tvclock_interval_day_one_float,&
+        tvclock_interval_day_one_double,tvclock_interval_day_one_longd
     end interface interval_day
 
     interface interval_week
@@ -569,7 +597,11 @@ module timez
         tvclock_interval_week_time_tm_timeval1,tvclock_interval_week_time_tm_timeval2,tvclock_interval_week_time_tm_int1,&
         tvclock_interval_week_time_tm_int2,tvclock_interval_week_time_tm_long1,tvclock_interval_week_time_tm_long2,&
         tvclock_interval_week_time_tm_float1,tvclock_interval_week_time_tm_float2,tvclock_interval_week_time_tm_double1,&
-        tvclock_interval_week_time_tm_double2,tvclock_interval_week_time_tm_longd1,tvclock_interval_week_time_tm_longd2
+        tvclock_interval_week_time_tm_double2,tvclock_interval_week_time_tm_longd1,tvclock_interval_week_time_tm_longd2,&
+        
+        tvclock_interval_week_one_timeval,tvclock_interval_week_one_timespec,tvclock_interval_week_one_time_tm,&
+        tvclock_interval_week_one_int,tvclock_interval_week_one_long,tvclock_interval_week_one_float,&
+        tvclock_interval_week_one_double,tvclock_interval_week_one_longd
     end interface interval_week
 
     interface interval_year !365.24218967  days in a year
@@ -584,7 +616,11 @@ module timez
         tvclock_interval_year_time_tm_timeval1,tvclock_interval_year_time_tm_timeval2,tvclock_interval_year_time_tm_int1,&
         tvclock_interval_year_time_tm_int2,tvclock_interval_year_time_tm_long1,tvclock_interval_year_time_tm_long2,&
         tvclock_interval_year_time_tm_float1,tvclock_interval_year_time_tm_float2,tvclock_interval_year_time_tm_double1,&
-        tvclock_interval_year_time_tm_double2,tvclock_interval_year_time_tm_longd1,tvclock_interval_year_time_tm_longd2
+        tvclock_interval_year_time_tm_double2,tvclock_interval_year_time_tm_longd1,tvclock_interval_year_time_tm_longd2,&
+        
+        tvclock_interval_year_one_timeval,tvclock_interval_year_one_timespec,tvclock_interval_year_one_time_tm,&
+        tvclock_interval_year_one_int,tvclock_interval_year_one_long,tvclock_interval_year_one_float,&
+        tvclock_interval_year_one_double,tvclock_interval_year_one_longd
     end interface interval_year
 
     contains
@@ -1109,6 +1145,807 @@ module timez
             class(time_tm),intent(in)::other
             this=mktime(other)
         end subroutine longd_equals_tm
+        !-------------------------------------------------------------------------------
+
+        real(kind=c_long_double) function tvclock_interval_one_sec_timeval(time1) result(difference)!time2-time1
+            type(timeval),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_usec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1%tv_sec
+            t1_usec=time1%tv_usec
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=(t2_sec-t1_sec)+(((t2_nsec/1000)-t1_usec)/1000000)
+        end function tvclock_interval_one_sec_timeval
+        real(kind=c_long_double) function tvclock_interval_one_sec_timespec(time1) result(difference)!time2-time1
+            type(timespec),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1%tv_sec
+            t1_nsec=time1%tv_nsec
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=(t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000)
+        end function tvclock_interval_one_sec_timespec
+        real(kind=c_long_double) function tvclock_interval_one_sec_time_tm(time1) result(difference)!time2-time1
+            type(time_tm),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=mktime(time1)
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=(t2_sec-t1_sec)+(t2_nsec/1000000000)
+        end function tvclock_interval_one_sec_time_tm
+        real(kind=c_long_double) function tvclock_interval_one_sec_int(time1) result(difference)!time2-time1
+        integer(kind=c_int),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=(t2_sec-t1_sec)+(t2_nsec/1000000000)
+        end function tvclock_interval_one_sec_int
+        real(kind=c_long_double) function tvclock_interval_one_sec_long(time1) result(difference)!time2-time1
+            integer(kind=c_long),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=(t2_sec-t1_sec)+(t2_nsec/1000000000)
+        end function tvclock_interval_one_sec_long
+        real(kind=c_long_double) function tvclock_interval_one_sec_float(time1) result(difference)!time2-time1
+            real(kind=c_float),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=(t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000)
+        end function tvclock_interval_one_sec_float
+        real(kind=c_long_double) function tvclock_interval_one_sec_double(time1) result(difference)!time2-time1
+            real(kind=c_double),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=(t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000)
+        end function tvclock_interval_one_sec_double
+
+        real(kind=c_long_double) function tvclock_interval_one_sec_longd(time1) result(difference)!time2-time1
+            real(kind=c_long_double),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=(t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000)
+        end function tvclock_interval_one_sec_longd
+
+        !-------------------------------------------------------------------------------
+
+        real(kind=c_long_double) function tvclock_interval_milli_one_timeval(time1) result(difference)!time2-time1
+            type(timeval),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_usec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1%tv_sec
+            t1_usec=time1%tv_usec
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(((t2_nsec/1000)-t1_usec)/1000000))*1000
+        end function tvclock_interval_milli_one_timeval
+        real(kind=c_long_double) function tvclock_interval_milli_one_timespec(time1) result(difference)!time2-time1
+            type(timespec),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1%tv_sec
+            t1_nsec=time1%tv_nsec
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))*1000
+        end function tvclock_interval_milli_one_timespec
+        real(kind=c_long_double) function tvclock_interval_milli_one_time_tm(time1) result(difference)!time2-time1
+            type(time_tm),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=mktime(time1)
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))*1000
+        end function tvclock_interval_milli_one_time_tm
+        real(kind=c_long_double) function tvclock_interval_milli_one_int(time1) result(difference)!time2-time1
+            integer(kind=c_int),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))*1000
+        end function tvclock_interval_milli_one_int
+        real(kind=c_long_double) function tvclock_interval_milli_one_long(time1) result(difference)!time2-time1
+            integer(kind=c_long),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))*1000
+        end function tvclock_interval_milli_one_long
+        real(kind=c_long_double) function tvclock_interval_milli_one_float(time1) result(difference)!time2-time1
+            real(kind=c_float),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))*1000
+        end function tvclock_interval_milli_one_float
+        real(kind=c_long_double) function tvclock_interval_milli_one_double(time1) result(difference)!time2-time1
+            real(kind=c_double),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))*1000
+        end function tvclock_interval_milli_one_double
+
+        real(kind=c_long_double) function tvclock_interval_milli_one_longd(time1) result(difference)!time2-time1
+            real(kind=c_long_double),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))*1000
+        end function tvclock_interval_milli_one_longd
+
+        !-------------------------------------------------------------------------------
+
+        real(kind=c_long_double) function tvclock_interval_micro_one_timeval(time1) result(difference)!time2-time1
+            type(timeval),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_usec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1%tv_sec
+            t1_usec=time1%tv_usec
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(((t2_nsec/1000)-t1_usec)/1000000))*1000000
+        end function tvclock_interval_micro_one_timeval
+        real(kind=c_long_double) function tvclock_interval_micro_one_timespec(time1) result(difference)!time2-time1
+            type(timespec),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1%tv_sec
+            t1_nsec=time1%tv_nsec
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))*1000000
+        end function tvclock_interval_micro_one_timespec
+        real(kind=c_long_double) function tvclock_interval_micro_one_time_tm(time1) result(difference)!time2-time1
+            type(time_tm),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=mktime(time1)
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))*1000000
+        end function tvclock_interval_micro_one_time_tm
+        real(kind=c_long_double) function tvclock_interval_micro_one_int(time1) result(difference)!time2-time1
+            integer(kind=c_int),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))*1000000
+        end function tvclock_interval_micro_one_int
+        real(kind=c_long_double) function tvclock_interval_micro_one_long(time1) result(difference)!time2-time1
+            integer(kind=c_long),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))*1000000
+        end function tvclock_interval_micro_one_long
+        real(kind=c_long_double) function tvclock_interval_micro_one_float(time1) result(difference)!time2-time1
+            real(kind=c_float),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))*1000000
+        end function tvclock_interval_micro_one_float
+        real(kind=c_long_double) function tvclock_interval_micro_one_double(time1) result(difference)!time2-time1
+            real(kind=c_double),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))*1000000
+        end function tvclock_interval_micro_one_double
+
+        real(kind=c_long_double) function tvclock_interval_micro_one_longd(time1) result(difference)!time2-time1
+            real(kind=c_long_double),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))*1000000
+        end function tvclock_interval_micro_one_longd
+
+        !-------------------------------------------------------------------------------
+
+        real(kind=c_long_double) function tvclock_interval_nano_one_timeval(time1) result(difference)!time2-time1
+            type(timeval),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_usec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1%tv_sec
+            t1_usec=time1%tv_usec
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(((t2_nsec/1000)-t1_usec)/1000000))*1000000000
+        end function tvclock_interval_nano_one_timeval
+        real(kind=c_long_double) function tvclock_interval_nano_one_timespec(time1) result(difference)!time2-time1
+            type(timespec),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1%tv_sec
+            t1_nsec=time1%tv_nsec
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))*1000000000
+        end function tvclock_interval_nano_one_timespec
+        real(kind=c_long_double) function tvclock_interval_nano_one_time_tm(time1) result(difference)!time2-time1
+            type(time_tm),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=mktime(time1)
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))*1000000000
+        end function tvclock_interval_nano_one_time_tm
+        real(kind=c_long_double) function tvclock_interval_nano_one_int(time1) result(difference)!time2-time1
+            integer(kind=c_int),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))*1000000000
+        end function tvclock_interval_nano_one_int
+        real(kind=c_long_double) function tvclock_interval_nano_one_long(time1) result(difference)!time2-time1
+            integer(kind=c_long),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))*1000000000
+        end function tvclock_interval_nano_one_long
+        real(kind=c_long_double) function tvclock_interval_nano_one_float(time1) result(difference)!time2-time1
+            real(kind=c_float),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))*1000000000
+        end function tvclock_interval_nano_one_float
+        real(kind=c_long_double) function tvclock_interval_nano_one_double(time1) result(difference)!time2-time1
+            real(kind=c_double),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))*1000000000
+        end function tvclock_interval_nano_one_double
+
+        real(kind=c_long_double) function tvclock_interval_nano_one_longd(time1) result(difference)!time2-time1
+            real(kind=c_long_double),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))*1000000000
+        end function tvclock_interval_nano_one_longd
+
+        !-------------------------------------------------------------------------------
+
+        real(kind=c_long_double) function tvclock_interval_min_one_timeval(time1) result(difference)!time2-time1
+            type(timeval),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_usec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1%tv_sec
+            t1_usec=time1%tv_usec
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(((t2_nsec/1000)-t1_usec)/1000000))/60
+        end function tvclock_interval_min_one_timeval
+        real(kind=c_long_double) function tvclock_interval_min_one_timespec(time1) result(difference)!time2-time1
+            type(timespec),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1%tv_sec
+            t1_nsec=time1%tv_nsec
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/60
+        end function tvclock_interval_min_one_timespec
+        real(kind=c_long_double) function tvclock_interval_min_one_time_tm(time1) result(difference)!time2-time1
+            type(time_tm),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=mktime(time1)
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))/60
+        end function tvclock_interval_min_one_time_tm
+        real(kind=c_long_double) function tvclock_interval_min_one_int(time1) result(difference)!time2-time1
+            integer(kind=c_int),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))/60
+        end function tvclock_interval_min_one_int
+        real(kind=c_long_double) function tvclock_interval_min_one_long(time1) result(difference)!time2-time1
+            integer(kind=c_long),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))/60
+        end function tvclock_interval_min_one_long
+        real(kind=c_long_double) function tvclock_interval_min_one_float(time1) result(difference)!time2-time1
+            real(kind=c_float),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/60
+        end function tvclock_interval_min_one_float
+        real(kind=c_long_double) function tvclock_interval_min_one_double(time1) result(difference)!time2-time1
+            real(kind=c_double),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/60
+        end function tvclock_interval_min_one_double
+
+        real(kind=c_long_double) function tvclock_interval_min_one_longd(time1) result(difference)!time2-time1
+            real(kind=c_long_double),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/60
+        end function tvclock_interval_min_one_longd
+
+        !-------------------------------------------------------------------------------
+
+        real(kind=c_long_double) function tvclock_interval_hour_one_timeval(time1) result(difference)!time2-time1
+            type(timeval),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_usec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1%tv_sec
+            t1_usec=time1%tv_usec
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(((t2_nsec/1000)-t1_usec)/1000000))/3600
+        end function tvclock_interval_hour_one_timeval
+        real(kind=c_long_double) function tvclock_interval_hour_one_timespec(time1) result(difference)!time2-time1
+            type(timespec),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1%tv_sec
+            t1_nsec=time1%tv_nsec
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/3600
+        end function tvclock_interval_hour_one_timespec
+        real(kind=c_long_double) function tvclock_interval_hour_one_time_tm(time1) result(difference)!time2-time1
+            type(time_tm),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=mktime(time1)
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))/3600
+        end function tvclock_interval_hour_one_time_tm
+        real(kind=c_long_double) function tvclock_interval_hour_one_int(time1) result(difference)!time2-time1
+            integer(kind=c_int),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))/3600
+        end function tvclock_interval_hour_one_int
+        real(kind=c_long_double) function tvclock_interval_hour_one_long(time1) result(difference)!time2-time1
+            integer(kind=c_long),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))/3600
+        end function tvclock_interval_hour_one_long
+        real(kind=c_long_double) function tvclock_interval_hour_one_float(time1) result(difference)!time2-time1
+            real(kind=c_float),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/3600
+        end function tvclock_interval_hour_one_float
+        real(kind=c_long_double) function tvclock_interval_hour_one_double(time1) result(difference)!time2-time1
+            real(kind=c_double),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/3600
+        end function tvclock_interval_hour_one_double
+
+        real(kind=c_long_double) function tvclock_interval_hour_one_longd(time1) result(difference)!time2-time1
+            real(kind=c_long_double),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/3600
+        end function tvclock_interval_hour_one_longd
+
+        !-------------------------------------------------------------------------------
+
+        real(kind=c_long_double) function tvclock_interval_day_one_timeval(time1) result(difference)!time2-time1
+            type(timeval),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_usec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1%tv_sec
+            t1_usec=time1%tv_usec
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(((t2_nsec/1000)-t1_usec)/1000000))/86400
+        end function tvclock_interval_day_one_timeval
+        real(kind=c_long_double) function tvclock_interval_day_one_timespec(time1) result(difference)!time2-time1
+            type(timespec),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1%tv_sec
+            t1_nsec=time1%tv_nsec
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/86400
+        end function tvclock_interval_day_one_timespec
+        real(kind=c_long_double) function tvclock_interval_day_one_time_tm(time1) result(difference)!time2-time1
+            type(time_tm),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=mktime(time1)
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))/86400
+        end function tvclock_interval_day_one_time_tm
+        real(kind=c_long_double) function tvclock_interval_day_one_int(time1) result(difference)!time2-time1
+            integer(kind=c_int),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))/86400
+        end function tvclock_interval_day_one_int
+        real(kind=c_long_double) function tvclock_interval_day_one_long(time1) result(difference)!time2-time1
+            integer(kind=c_long),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))/86400
+        end function tvclock_interval_day_one_long
+        real(kind=c_long_double) function tvclock_interval_day_one_float(time1) result(difference)!time2-time1
+            real(kind=c_float),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/86400
+        end function tvclock_interval_day_one_float
+        real(kind=c_long_double) function tvclock_interval_day_one_double(time1) result(difference)!time2-time1
+            real(kind=c_double),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/86400
+        end function tvclock_interval_day_one_double
+
+        real(kind=c_long_double) function tvclock_interval_day_one_longd(time1) result(difference)!time2-time1
+            real(kind=c_long_double),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/86400
+        end function tvclock_interval_day_one_longd
+
+        !-------------------------------------------------------------------------------
+
+        real(kind=c_long_double) function tvclock_interval_week_one_timeval(time1) result(difference)!time2-time1
+            type(timeval),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_usec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1%tv_sec
+            t1_usec=time1%tv_usec
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(((t2_nsec/1000)-t1_usec)/1000000))/604800
+        end function tvclock_interval_week_one_timeval
+        real(kind=c_long_double) function tvclock_interval_week_one_timespec(time1) result(difference)!time2-time1
+            type(timespec),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1%tv_sec
+            t1_nsec=time1%tv_nsec
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/604800
+        end function tvclock_interval_week_one_timespec
+        real(kind=c_long_double) function tvclock_interval_week_one_time_tm(time1) result(difference)!time2-time1
+            type(time_tm),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=mktime(time1)
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))/604800
+        end function tvclock_interval_week_one_time_tm
+        real(kind=c_long_double) function tvclock_interval_week_one_int(time1) result(difference)!time2-time1
+            integer(kind=c_int),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))/604800
+        end function tvclock_interval_week_one_int
+        real(kind=c_long_double) function tvclock_interval_week_one_long(time1) result(difference)!time2-time1
+            integer(kind=c_long),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))/604800
+        end function tvclock_interval_week_one_long
+        real(kind=c_long_double) function tvclock_interval_week_one_float(time1) result(difference)!time2-time1
+            real(kind=c_float),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/604800
+        end function tvclock_interval_week_one_float
+        real(kind=c_long_double) function tvclock_interval_week_one_double(time1) result(difference)!time2-time1
+            real(kind=c_double),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/604800
+        end function tvclock_interval_week_one_double
+
+        real(kind=c_long_double) function tvclock_interval_week_one_longd(time1) result(difference)!time2-time1
+            real(kind=c_long_double),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/604800
+        end function tvclock_interval_week_one_longd
+
+        !-------------------------------------------------------------------------------
+
+        real(kind=c_long_double) function tvclock_interval_year_one_timeval(time1) result(difference)!time2-time1
+            type(timeval),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_usec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1%tv_sec
+            t1_usec=time1%tv_usec
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(((t2_nsec/1000)-t1_usec)/1000000))/31556925.19
+        end function tvclock_interval_year_one_timeval
+        real(kind=c_long_double) function tvclock_interval_year_one_timespec(time1) result(difference)!time2-time1
+            type(timespec),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1%tv_sec
+            t1_nsec=time1%tv_nsec
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/31556925.19
+        end function tvclock_interval_year_one_timespec
+        real(kind=c_long_double) function tvclock_interval_year_one_time_tm(time1) result(difference)!time2-time1
+            type(time_tm),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=mktime(time1)
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))/31556925.19
+        end function tvclock_interval_year_one_time_tm
+        real(kind=c_long_double) function tvclock_interval_year_one_int(time1) result(difference)!time2-time1
+            integer(kind=c_int),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))/31556925.19
+        end function tvclock_interval_year_one_int
+        real(kind=c_long_double) function tvclock_interval_year_one_long(time1) result(difference)!time2-time1
+            integer(kind=c_long),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=time1
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+(t2_nsec/1000000000))/31556925.19
+        end function tvclock_interval_year_one_long
+        real(kind=c_long_double) function tvclock_interval_year_one_float(time1) result(difference)!time2-time1
+            real(kind=c_float),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/31556925.19
+        end function tvclock_interval_year_one_float
+        real(kind=c_long_double) function tvclock_interval_year_one_double(time1) result(difference)!time2-time1
+            real(kind=c_double),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/31556925.19
+        end function tvclock_interval_year_one_double
+
+        real(kind=c_long_double) function tvclock_interval_year_one_longd(time1) result(difference)!time2-time1
+            real(kind=c_long_double),intent(in)::time1
+            type(timespec)::time2
+            real(kind=c_long_double)::t1_sec,t1_nsec,t2_sec,t2_nsec
+            time2=clock_gettime()
+            t1_sec=floor(time1,kind=c_long)
+            t1_nsec=(time1-t1_sec)*1000000000
+            t2_sec=time2%tv_sec
+            t2_nsec=time2%tv_nsec
+            difference=((t2_sec-t1_sec)+((t2_nsec-t1_nsec)/1000000000))/31556925.19
+        end function tvclock_interval_year_one_longd
+        !--------------------------------------------------------------------------------
 
         real(kind=c_long_double) function tvclock_interval1(time1,time2) result(difference)!time2-time1
             type(timeval),intent(in)::time1
