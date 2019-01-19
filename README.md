@@ -1,15 +1,12 @@
 # Fortran-Timez
 Fortran Timing library
 
-The code uses the C time.h functions for timing. Extra functionality was added on top so you don't need to mess with the C interface to use this library. When using this library use C interoperability types if you can. Most of the functions take advantage of function overloading so you can use many types with most of the functions. 
+The code uses the C time.h and C++ chrono functions for timing. When using this library use C interoperability types if you can. Most of the functions take advantage of overloading so you can use many types with most of the functions. 
 
-Some of these functions are built into Linux so using this module in Windows might not work.
+This should work in different operating systems since it relies on C++ chrono when its not in a linux environment.
+Clock_settime, clock_getres, and settimeofday do not work outside of linux in this library.
 
-Tested only in gfortran 8.2 so far. Fortran 2003 or higher is required for this library to work.
-
-The file is pretty big. In the future i'll see about breaking it up into smaller files for faster compiling.
-
-Although some of the types have functions and overloading going on, you can still pass them to C without any problems if you have to.
+Gfortran 8.2 or higher is required along with a recent C++ compiler c++11 or higher like g++ g++-8. Gfortran 8.1 and lower are not compatible. It doesn't have certain C interoperability features. Haven't tested any other compilers.
 
 #### Usage  `use timez`
 
@@ -1045,4 +1042,7 @@ integer(kind=c_int),parameter::clock_realtime=0,clock_monotonic=1,clock_process_
     clock_boottime=7,clock_realtime_alarm=8,clock_boottime_alarm=9,clock_tai=11,timer_abstime=1
 
 ```
-
+## Compiling
+```
+g++-8 -c chronos.cpp && gfortran-8 -c YOUR_PROGRAM.f08 timez.f08 && gfortran-8 YOUR_PROGRAM.o timez.o chronos.o -lstdc++ -o t.o &&./t.o
+```
