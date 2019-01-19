@@ -3,7 +3,7 @@ Fortran Timing library
 
 The code uses the C time.h and C++ chrono functions for timing. When using this library use C interoperability types if you can. Most of the functions take advantage of overloading so you can use many types with most of the functions. 
 
-This should work in different operating systems since it relies on C++ chrono when its not in a linux environment.
+Timez should work in different operating systems since it relies on C++ chrono when its not in a linux environment.
 Clock_settime, clock_getres, and settimeofday do not work outside of linux in this library.
 
 Gfortran 8.2 or higher is required along with a recent C++ compiler c++11 or higher like g++ g++-8. Gfortran 8.1 and lower are not compatible. It doesn't have certain C interoperability features. Haven't tested any other compilers.
