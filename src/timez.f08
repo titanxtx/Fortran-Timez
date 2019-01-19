@@ -227,22 +227,22 @@ module timez
     clock_boottime=7,clock_realtime_alarm=8,clock_boottime_alarm=9,clock_tai=11,timer_abstime=1
     
     interface
-        integer(kind=c_int) function sleep_(sec) bind(C,name="sleep")
+        integer(kind=c_int) function sleep_(sec) bind(C,name="sleep_check")
             use iso_c_binding,only:c_int
             integer(kind=c_int),intent(in),value::sec
         end function sleep_
 
-        integer(kind=c_int) function usleep_(usec) bind(C,name="usleep")
+        integer(kind=c_int) function usleep_(usec) bind(C,name="usleep_check")
             use iso_c_binding,only:c_int
             integer(kind=c_int),intent(in),value::usec
         end function usleep_
 
-        integer(kind=c_int) function nanosleep_(req,rem) bind(C,name="nanosleep")!timespec,timespec
+        integer(kind=c_int) function nanosleep_(req,rem) bind(C,name="nanosleep_check")!timespec,timespec
             use iso_c_binding,only:c_int,c_long,c_ptr
             type(c_ptr),intent(in),value::req,rem
         end function nanosleep_
 
-        integer(kind=c_int) function gettimeofday_(tv,tz) bind(C,name="gettimeofday")!timeval,timezone
+        integer(kind=c_int) function gettimeofday_(tv,tz) bind(C,name="gettimeofday_check")!timeval,timezone
             use iso_c_binding,only:c_int,c_long,c_ptr
             type(c_ptr),intent(in),value::tv,tz
         end function gettimeofday_
@@ -264,7 +264,7 @@ module timez
             type(c_ptr),intent(in),value::res
         end function clock_settime_
 
-        integer(kind=c_int) function clock_gettime_(clk_id,tp) bind(C,name="clock_gettime")!constant, timespec
+        integer(kind=c_int) function clock_gettime_(clk_id,tp) bind(C,name="clock_gettime_check")!constant, timespec
             use iso_c_binding,only:c_int,c_long,c_ptr
             integer(kind=c_int),intent(in),value::clk_id
             type(c_ptr),intent(in),value::tp
